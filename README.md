@@ -13,7 +13,7 @@ To programmatically change the discount back to 50% throught the browser's conso
 Console Commands:<br>
 <code>x = getSrv('myDiscount')</code><br>
 <code>$scope = getScope()</code><br>
-<code>**$scope.$apply(function() { x.setDiscount(*.5*);})**</code>
+<code>**$scope.$apply(function() { x.setDiscount(*.5*); })**</code>
 
 To modify the discount repeatedly, simply repeat the *last line of console code* with a new discount value.  You may use the up arrow on your keyboard to pull up the last command sent in the console.  
 <br>
