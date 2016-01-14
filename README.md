@@ -15,6 +15,6 @@ Console Commands:<br>
 <code>$scope = getScope()</code><br>
 <code>**$scope.$apply(function() { x.setDiscount(*.5*);})**</code>
 
-To modify the discount repeatedly, simply repeat the *last line of console code* with a new discount.  You may use the up arrow on your keyboard to pull up the last command sent in the console.  
+To modify the discount repeatedly, simply repeat the *last line of console code* with a new discount value.  You may use the up arrow on your keyboard to pull up the last command sent in the console.  
 <br>
 The first two console commands must be typed to get access to the service which maintains the state of our discounts and our $scope, which stores our model.
