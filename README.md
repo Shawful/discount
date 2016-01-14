@@ -8,7 +8,7 @@ Sets the discount in multiple places on a SPA and allows a user to manipulate th
 4) run <code>grunt serve</code> like two previous commands; serves a local instance of app on [localhost:9000/#/](http://localhost:9000/#/)<br>
 <hr>
 Initially, the SPA (single page application) shows a 50% discount.  After two seconds, the discount goes away, effectively changing the discount to 100% (no discount).  <br><br>
-To programmatically change the discount back to 50% throught the browser's console, follow the directions below:<br>
+To programmatically change the discount back to 50% through the browser's console, follow the directions below:<br>
 <hr>
 Console Commands:<br>
 <code>x = getSrv('myDiscount')</code><br>
