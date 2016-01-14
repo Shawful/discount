@@ -5,7 +5,7 @@ Sets the discount in multiple places on a SPA and allows a user to manipulate th
 1) Clone the repo<br>
 2) run <code>npm install</code> from command prompt in local repo folder<br>
 3) run <code>bower install</code> from command prompt in local repo folder<br>
-4) run <code>grunt serve</code> like previous commands to serve a local instance of site on [localhost:9000/#/](http://localhost:9000/#/)<br>
+4) run <code>grunt serve</code> like two previous commands; serves a local instance of site on [localhost:9000/#/](http://localhost:9000/#/)<br>
 <hr>
 Initially, the SPA (single page application) shows a 50% discount.  After two seconds, the discount goes away, effectively changing the discount to 100% (no discount).  <br><br>
 To programmatically change the discount back to 50% throught the browser's console, follow the directions below:<br>
