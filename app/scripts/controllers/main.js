@@ -8,7 +8,8 @@
  * Controller of the discountApp
  */
 angular.module('discountApp')
-  .controller('MainCtrl', [ 'myDiscount', '$scope', '$timeout', function (myDiscount, $scope, $timeout) {
+  .controller('MainCtrl', [ 'myDiscount', '$scope', '$timeout', '$rootScope',
+  	function (myDiscount, $scope, $timeout, $rootScope) {
    
     // Get variables from service
     $scope.prices = myDiscount.getPrices();
@@ -20,5 +21,10 @@ angular.module('discountApp')
     	$scope.discount = myDiscount.getDiscount();
     	$scope.prices = myDiscount.getPrices();
     }, 2000);
+
+    $rootScope.$on('discountChange', function(){
+		$scope.discount = myDiscount.getDiscount();
+    	$scope.prices = myDiscount.getPrices();
+    });
 
   }]);

@@ -1,5 +1,5 @@
 angular.module('discountApp')
-  .factory('myDiscount', function () {
+  .factory('myDiscount', ['$rootScope', function ($rootScope) {
   	var discount = .5;
   	var prices = {
     	standard: {
@@ -31,7 +31,8 @@ angular.module('discountApp')
   			prices.standard.discount = prices.standard.base*discount;
   			prices.pro.discount = prices.pro.base*discount;
   			prices.business.discount = prices.business.base*discount;
+  			$rootScope.$broadcast('discountChange');
   			// businessconsole.log(discount);
   		}
   	}
-  });
+  }]);
