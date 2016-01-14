@@ -24,19 +24,17 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
       .otherwise({
         redirectTo: '/'
       });
   });
 
+// return access to a service by name
 function getSrv(name) {
-      return angular.element(document.body).injector().get(name);
-    }
+  return angular.element(document.body).injector().get(name);
+}
 
+// return access to the $scope for ng-app
 function getScope() {
   var scope = angular.element(document.body).scope();
   return scope;
